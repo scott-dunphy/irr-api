@@ -91,3 +91,59 @@ def irr():
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
+
+
+# HTML code for the table
+html_table = """
+<table border="1">
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>unit_count</td>
+        <td>Number of units in the apartment.</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>purchase_price</td>
+        <td>Total price for acquiring the property.</td>
+        <td>1,000,000</td>
+    </tr>
+    <tr>
+        <td>market_rent_per_unit</td>
+        <td>Average expected rent per unit.</td>
+        <td>1,200</td>
+    </tr>
+    <tr>
+        <td>rent_growth_per_year</td>
+        <td>Annual rent growth rate.</td>
+        <td>3%</td>
+    </tr>
+    <tr>
+        <td>year_1_expense_ratio</td>
+        <td>Ratio of expenses to revenue in the first year.</td>
+        <td>50%</td>
+    </tr>
+    <tr>
+        <td>expense_growth_per_year</td>
+        <td>Annual growth rate of expenses.</td>
+        <td>2%</td>
+    </tr>
+    <tr>
+        <td>capex_per_unit</td>
+        <td>Annual capital expenditure per unit.</td>
+        <td>500</td>
+    </tr>
+    <tr>
+        <td>exit_cap_rate</td>
+        <td>Cap rate for estimating the property's sale value.</td>
+        <td>5%</td>
+    </tr>
+</table>
+"""
+
+# Display HTML table in Streamlit app
+st.markdown(html_table, unsafe_allow_html=True)
+
